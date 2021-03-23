@@ -33,10 +33,10 @@ sg_egress_rules  = ["all-all"]
 
 #my-ec2-values
 
-my_ec2_name = "sample-server"
+my_ec2_name = "web-server"
 ec2_count   = 1
 ec2_type    = "t2.micro" 
-ec2_tags    = { Name = "sample-server"}
+ec2_tags    = { Name = "web-server"}
 
 
 #my-data-source-values
