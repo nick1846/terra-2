@@ -26,7 +26,7 @@ my_igw_tags             = { Name = "terra-2-igw" }
 #my-sg-values
 
 my_sg_name       = "my-sg"
-sg_description   = "Security group for web-server and ssh access"
+sg_description   = "Security group for web_server and ssh access"
 sg_ingress_cidr  = ["0.0.0.0/0"]
 sg_ingress_rules = ["https-443-tcp", "http-80-tcp", "ssh-tcp", "http-8080-tcp"]
 sg_egress_cidr   = ["0.0.0.0/0"]
@@ -34,10 +34,10 @@ sg_egress_rules  = ["all-all"]
 
 #my-ec2-values
 
-my_ec2_name = "web-server"
+my_ec2_name = "web_server"
 ec2_count   = 1
 ec2_type    = "t2.micro" 
-ec2_tags    = { Name = "web-server"}
+ec2_tags    = { Name = "web_server"}
 
 
 #my-data-source-values
