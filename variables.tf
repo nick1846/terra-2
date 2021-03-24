@@ -41,6 +41,9 @@ variable "my_vpc_private_subnets" {
 variable "my_vpc_public_subnets" {  
 }
 
+variable "my_dns_hostnames_bool" {
+}  
+
 variable "my_vpc_nat_gateway_bool" {  
 }
 
