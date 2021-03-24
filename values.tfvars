@@ -16,6 +16,7 @@ my_vpc_cidr             = "10.0.0.0/16"
 my_vpc_azs              = ["us-east-2a", "us-east-2b"]
 my_vpc_private_subnets  = ["10.0.1.0/24"]
 my_vpc_public_subnets   = ["10.0.100.0/24"]
+my_dns_hostnames_bool   = "true"
 my_vpc_nat_gateway_bool = "false"
 my_vpc_tags             = { Name = "terra-2-vpc"}
 my_public_subnets_tags  = { Name = "terra-2-public-subnet-a" }
