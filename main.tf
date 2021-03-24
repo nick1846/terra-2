@@ -16,17 +16,18 @@ resource "aws_eip" "for_each" {
 }
 
 module "my_vpc" {
-  source              = "terraform-aws-modules/vpc/aws"
-  name                = var.my_vpc_name
-  cidr                = var.my_vpc_cidr
-  azs                 = var.my_vpc_azs
-  private_subnets     = var.my_vpc_private_subnets
-  public_subnets      = var.my_vpc_public_subnets
-  enable_nat_gateway  = var.my_vpc_nat_gateway_bool
-  vpc_tags            = var.my_vpc_tags
-  public_subnet_tags  = var.my_public_subnets_tags  
-  private_subnet_tags = var.my_private_subnets_tags
-  igw_tags            = var.my_igw_tags
+  source               = "terraform-aws-modules/vpc/aws"
+  name                 = var.my_vpc_name
+  cidr                 = var.my_vpc_cidr
+  azs                  = var.my_vpc_azs
+  private_subnets      = var.my_vpc_private_subnets
+  public_subnets       = var.my_vpc_public_subnets
+  enable_dns_hostnames = var.my_dns_hostnames_bool
+  enable_nat_gateway   = var.my_vpc_nat_gateway_bool
+  vpc_tags             = var.my_vpc_tags
+  public_subnet_tags   = var.my_public_subnets_tags  
+  private_subnet_tags  = var.my_private_subnets_tags
+  igw_tags             = var.my_igw_tags
   
 }
 
